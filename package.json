@@ -7,6 +7,8 @@
     "start:prod": "node ./dist/server.js",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
+    "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
+    "prettier:fix": "npx prettier --write ./src",
     "start:dev": "ts-node-dev --respawn --transpile-only ./src/server.ts",
     "build": "tsc"
   },
@@ -26,6 +28,8 @@
     "@types/eslint__js": "^8.42.3",
     "@types/express": "^4.17.21",
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.0"
   }
