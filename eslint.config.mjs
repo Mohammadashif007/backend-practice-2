@@ -11,7 +11,6 @@ export default tseslint.config(
             "prefer-const": "error",
             "no-undef": "error",
             "no-console": "warn",
-            "no-unused-expression": "error",
         }
     },
     {
